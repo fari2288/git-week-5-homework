@@ -5,8 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        main,
+        footer {
+            flex: 0 0 content;
+            
+            
+        }
+
+        .header {
+            
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgba(171, 171, 233, 0.5);
+            
+        }
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: row;
+    height: 100%;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    
+    flex-direction:row;
+}
+        
+    p {
+        display: flex;
+        height: 5vh;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(233, 178, 129, 0.5);
+        
+        }
+
+.class3 {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    
+
+}
+    body {
+            display: flex;
+            flex-flow: column;
+            min-height: 50vh;
+        }
+
+div {
+    display: flex;
+    padding: 20px;
+    
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    width: 30vh;
+    flex-flow: column;
+    
+    align-content:flex-end;
+    background-color: rgba(241, 226, 233, 0.5);
+}
+.aside {
+    display: flex;
+    
+    width: 30vh;
+    
+    justify-content:center;
+    background-color: rgb(187, 245, 187, 0.5);
+}
+.footer {
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+    height: 10vh;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgba(171, 171, 233, 0.5);
+}
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+    background-color: white;
+}
+
+    </style>
+
+
 </head>
+
+
+
+
 <body>
-    homework
+    
+<header class="header" >[Шапка страницы]</header>
+
+    <main class="main">
+    
+    <nav class="nav">
+        <div>[Основная часть]</div>
+        <section class="section">
+        <p class="class">[Еще 1]</p>
+        <p class="class">[Еще 2]</p>
+        <p class="class3">[Еще 3]</p><section>
+    </nav>
+
+    <aside class="aside">[Боковая область]</aside>
+
+    </main>
+
+    <footer class="footer">
+        <section class="section1"><div class="footer1">[Секция футера 1]</div></section>
+        <section class="section1"><div class="footer2">[Секция футера 2]</div></section>
+        <section class="section1"><div class="footer3">[Секция футера 3]</div></section>
+        <section class="section1"><div class="footer4">[Секция футера 4]</div></section>
+    </footer>
+
+
 </body>
 </html>
